@@ -205,15 +205,6 @@ document.addEventListener("DOMContentLoaded", () => {
             el.addEventListener("input", updateCalc);
             el.addEventListener("change", updateCalc);
         });
-        document.querySelectorAll(".stepper-btn").forEach((btn) => {
-            btn.addEventListener("click", () => {
-                const input = document.getElementById(btn.dataset.target);
-                if (!input) return;
-                const step = parseInt(btn.dataset.step, 10) || 0;
-                input.value = Math.max(0, (parseInt(input.value, 10) || 0) + step);
-                updateCalc();
-            });
-        });
         updateCalc();
     }
 });
