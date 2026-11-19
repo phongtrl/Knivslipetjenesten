@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#f5f1e9">
+    <meta name="theme-color" content="#f8f7f3">
     <meta name="color-scheme" content="light">
     <meta name="format-detection" content="telephone=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -14,39 +14,44 @@
     <meta name="description" content="Knivsliping i Trondheim. Håndsliping på japanske våtsteiner fra 125 kr per kjøkkenkniv. Kontakt Phong for levering og henting.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#top" data-i18n="skip">Hopp til innhold</a>
     <header class="site-header">
         <div class="container header-inner">
             <a href="#top" class="logo">
                 <span class="logo-text">Kniveslipetjenesten</span>
             </a>
-            <nav class="nav">
+            <nav class="nav" data-label="navigation" aria-label="Hovedmeny">
                 <a href="#about" data-i18n="navAbout">Slik fungerer det</a>
                 <a href="#services" data-i18n="navServices">Tjenester</a>
                 <a href="#pricing" data-i18n="navPricing">Priser</a>
-                <a href="#not-offered" data-i18n="navNotOffered">Avgrensninger</a>
                 <a href="#contact" data-i18n="navContact">Kontakt</a>
             </nav>
-            <div class="lang-switch" role="group" aria-label="Velg språk">
-                <button type="button" class="lang-btn" data-lang="en">EN</button>
-                <span class="lang-divider">/</span>
-                <button type="button" class="lang-btn active" data-lang="no">NO</button>
+            <div class="lang-switch" role="group" data-label="language" aria-label="Velg språk">
+                <button type="button" class="lang-btn" aria-pressed="false" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" aria-pressed="true" data-lang="no">NO</button>
             </div>
         </div>
     </header>
 
-    <main id="top">
+    <main id="top" tabindex="-1">
         <section class="hero">
             <div class="container hero-inner">
-                <p class="hero-eyebrow" data-i18n="heroEyebrow">Knivsliping i Trondheim</p>
-                <h1 class="hero-title" data-i18n="heroTitle">Sløve kjøkkenkniver? Jeg sliper dem.</h1>
-                <p class="hero-subtitle" data-i18n="heroSubtitle">Håndsliping på japanske våtsteiner for hjemmekokker og profesjonelle. Vanlig kjøkkenkniv: 125 kr. Avtal levering og henting direkte med meg.</p>
-                <div class="hero-actions">
-                    <a href="#pricing" class="btn btn-ghost" data-i18n="heroCtaPricing">Se priser</a>
-                    <a href="#contact" class="btn btn-primary" data-i18n="heroCtaContact">Avtal knivsliping</a>
+                <div class="hero-copy">
+                    <p class="hero-eyebrow" data-i18n="heroEyebrow">Knivsliping i Trondheim</p>
+                    <h1 class="hero-title" data-i18n="heroTitle">Gi kjøkkenknivene ny egg.</h1>
+                    <p class="hero-subtitle" data-i18n="heroSubtitle">Phong sliper kjøkkenkniver for hånd på japanske våtsteiner. Levering og henting i Trondheim etter avtale.</p>
+                    <div class="hero-actions">
+                        <a href="#pricing" class="btn btn-primary" data-i18n="heroCtaPricing">Beregn pris</a>
+                        <a href="#contact" class="btn btn-ghost" data-i18n="heroCtaContact">Avtal knivsliping</a>
+                    </div>
+                    <p class="hero-rate"><strong data-i18n="heroRate">125 kr</strong> <span data-i18n="heroRateUnit">per vanlig kjøkkenkniv</span></p>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/whetstone.webp" width="768" height="960" alt="" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -55,8 +60,8 @@
             <div class="container service-process">
                 <h2 class="section-title" data-i18n="aboutTitle">Slik får du knivene slipt</h2>
                 <ol class="process-list">
-                    <li><span class="process-number" aria-hidden="true">01</span><p data-i18n="aboutText1">Send en SMS med antall kniver og hvilke typer du vil ha slipt. Har kniven hakk eller knekt spiss, send gjerne et bilde.</p></li>
-                    <li><span class="process-number" aria-hidden="true">02</span><p data-i18n="aboutText2">Vi avtaler levering og henting i Trondheim. Se prisene nedenfor for sliping og tillegg.</p></li>
+                    <li><h3 data-i18n="step1">Send en forespørsel</h3><p data-i18n="aboutText1">Send en SMS med antall kniver og hvilke typer du vil ha slipt. Har kniven hakk eller knekt spiss, send gjerne et bilde.</p></li>
+                    <li><h3 data-i18n="step2">Avtal levering</h3><p data-i18n="aboutText2">Vi avtaler levering og henting i Trondheim. Se prisene nedenfor for sliping og tillegg.</p></li>
                 </ol>
                 <p class="sharpener-note" data-i18n="aboutText3">Jeg heter Phong og sliper knivene for hånd på japanske våtsteiner. Fra 2020 til 2025 slipte jeg for hjemmekokker og profesjonelle kokker som en av eierne av Tomatosharp.</p>
             </div>
@@ -88,593 +93,59 @@
                 <h2 class="section-title" data-i18n="pricingTitle">Priser</h2>
                 <p class="section-lead" data-i18n="pricingLead">125 kr per vanlig kjøkkenkniv. Tilleggene nedenfor kommer i tillegg til grunnprisen.</p>
 
-                <div class="pricing-grid">
-                    <div class="price-card price-card-main">
-                        <p class="price-label" data-i18n="price1Label">Vanlig kjøkkenkniv</p>
-                        <p class="price-amount"><span class="price-value">125</span><span class="price-currency">,- NOK</span></p>
-                        <p class="price-note" data-i18n="price1Note">Standard sliping per kniv.</p>
+                <div class="pricing-layout">
+                    <div class="rate-sheet">
+                        <dl class="rates">
+                            <div><dt data-i18n="price1Label">Vanlig kjøkkenkniv</dt><dd>125 kr</dd></div>
+                            <div><dt data-i18n="price2Label">Tillegg for mindre skader</dt><dd>+50 kr</dd></div>
+                            <div><dt data-i18n="price3Label">Tillegg for ensidig egg</dt><dd>+100 kr</dd></div>
+                            <div><dt data-i18n="price4Label">Tillegg for fileteringskniver</dt><dd>+25 kr</dd></div>
+                        </dl>
+                        <p data-i18n="price2Note">50 kr per skade. Hakk i eggen og knekt spiss regnes som to skader.</p>
+                        <p class="pricing-example" data-i18n="exampleText">En Yanagiba med et lite hakk i eggen koster 275 kr (125 + 100 + 50).</p>
                     </div>
-                    <div class="price-card">
-                        <p class="price-label" data-i18n="price2Label">Tillegg for mindre skader</p>
-                        <p class="price-amount"><span class="price-plus">+</span><span class="price-value">50</span><span class="price-currency">,- NOK</span></p>
-                        <p class="price-note" data-i18n="price2Note">50 kr per skade. Hakk i eggen og knekt spiss regnes som to skader.</p>
-                    </div>
-                    <div class="price-card">
-                        <p class="price-label" data-i18n="price3Label">Tillegg for ensidig egg</p>
-                        <p class="price-amount"><span class="price-plus">+</span><span class="price-value">100</span><span class="price-currency">,- NOK</span></p>
-                        <p class="price-note" data-i18n="price3Note">For kniver med ensidig egg, som Yanagiba og Deba.</p>
-                    </div>
-                    <div class="price-card">
-                        <p class="price-label" data-i18n="price4Label">Tillegg for fileteringskniver</p>
-                        <p class="price-amount"><span class="price-plus">+</span><span class="price-value">25</span><span class="price-currency">,- NOK</span></p>
-                        <p class="price-note" data-i18n="price4Note">For fleksible fileteringskniver.</p>
-                    </div>
-                </div>
-
-                <div class="pricing-bottom">
-                    <div class="pricing-example">
-                        <h3 data-i18n="exampleTitle">Eksempel</h3>
-                        <p data-i18n="exampleText">En Yanagiba med et lite hakk i eggen: 125 + 100 + 50 = 275,- NOK.</p>
-                    </div>
-
-                    <div class="calculator">
+                    <form class="calculator" id="calculator" hidden>
                         <h3 data-i18n="calcTitle">Priskalkulator</h3>
-
-                        <div class="calc-main">
-                            <span class="calc-main-label">
-                                <label for="calcQty" data-i18n="calcQtyLabel">Antall kniver</label>
-                                <span class="calc-unit">125,- NOK</span>
-                            </span>
-                            <select id="calcQty" class="quantity-select">
-                                <option value="0">0</option>
-                                <option value="1" selected>1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                                <option value="51">51</option>
-                                <option value="52">52</option>
-                                <option value="53">53</option>
-                                <option value="54">54</option>
-                                <option value="55">55</option>
-                                <option value="56">56</option>
-                                <option value="57">57</option>
-                                <option value="58">58</option>
-                                <option value="59">59</option>
-                                <option value="60">60</option>
-                                <option value="61">61</option>
-                                <option value="62">62</option>
-                                <option value="63">63</option>
-                                <option value="64">64</option>
-                                <option value="65">65</option>
-                                <option value="66">66</option>
-                                <option value="67">67</option>
-                                <option value="68">68</option>
-                                <option value="69">69</option>
-                                <option value="70">70</option>
-                                <option value="71">71</option>
-                                <option value="72">72</option>
-                                <option value="73">73</option>
-                                <option value="74">74</option>
-                                <option value="75">75</option>
-                                <option value="76">76</option>
-                                <option value="77">77</option>
-                                <option value="78">78</option>
-                                <option value="79">79</option>
-                                <option value="80">80</option>
-                                <option value="81">81</option>
-                                <option value="82">82</option>
-                                <option value="83">83</option>
-                                <option value="84">84</option>
-                                <option value="85">85</option>
-                                <option value="86">86</option>
-                                <option value="87">87</option>
-                                <option value="88">88</option>
-                                <option value="89">89</option>
-                                <option value="90">90</option>
-                                <option value="91">91</option>
-                                <option value="92">92</option>
-                                <option value="93">93</option>
-                                <option value="94">94</option>
-                                <option value="95">95</option>
-                                <option value="96">96</option>
-                                <option value="97">97</option>
-                                <option value="98">98</option>
-                                <option value="99">99</option>
-                                <option value="100">100</option>
-                            </select>
-                        </div>
-
-                        <div class="calc-subs">
-                            <p class="calc-subs-title" data-i18n="calcSubsTitle">Tillegg — velg antall</p>
-                            <div class="calc-field">
-                                <span class="calc-field-label">
-                                    <label for="calcChip" data-i18n="calcChipLabel">Hakk langs eggen</label>
-                                    <span class="calc-unit">50,- NOK</span>
-                                </span>
+                            <div class="calc-row">
+                                <label for="calcQty"><span data-i18n="calcQtyLabel">Antall kniver</span> <small>125 kr</small></label>
+                                <select id="calcQty" class="quantity-select">
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                        <fieldset>
+                            <legend data-i18n="calcSubsTitle">Tillegg</legend>
+                            <div class="calc-row">
+                                <label for="calcChip"><span data-i18n="calcChipLabel">Hakk langs eggen</span> <small>+50 kr</small></label>
                                 <select id="calcChip" class="quantity-select">
-                                <option value="0" selected>0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                                <option value="51">51</option>
-                                <option value="52">52</option>
-                                <option value="53">53</option>
-                                <option value="54">54</option>
-                                <option value="55">55</option>
-                                <option value="56">56</option>
-                                <option value="57">57</option>
-                                <option value="58">58</option>
-                                <option value="59">59</option>
-                                <option value="60">60</option>
-                                <option value="61">61</option>
-                                <option value="62">62</option>
-                                <option value="63">63</option>
-                                <option value="64">64</option>
-                                <option value="65">65</option>
-                                <option value="66">66</option>
-                                <option value="67">67</option>
-                                <option value="68">68</option>
-                                <option value="69">69</option>
-                                <option value="70">70</option>
-                                <option value="71">71</option>
-                                <option value="72">72</option>
-                                <option value="73">73</option>
-                                <option value="74">74</option>
-                                <option value="75">75</option>
-                                <option value="76">76</option>
-                                <option value="77">77</option>
-                                <option value="78">78</option>
-                                <option value="79">79</option>
-                                <option value="80">80</option>
-                                <option value="81">81</option>
-                                <option value="82">82</option>
-                                <option value="83">83</option>
-                                <option value="84">84</option>
-                                <option value="85">85</option>
-                                <option value="86">86</option>
-                                <option value="87">87</option>
-                                <option value="88">88</option>
-                                <option value="89">89</option>
-                                <option value="90">90</option>
-                                <option value="91">91</option>
-                                <option value="92">92</option>
-                                <option value="93">93</option>
-                                <option value="94">94</option>
-                                <option value="95">95</option>
-                                <option value="96">96</option>
-                                <option value="97">97</option>
-                                <option value="98">98</option>
-                                <option value="99">99</option>
-                                <option value="100">100</option>
-                            </select>
+                                    <option value="0">0</option>
+                                </select>
                             </div>
-                            <div class="calc-field">
-                                <span class="calc-field-label">
-                                    <label for="calcTip" data-i18n="calcTipLabel">Knekte tupper</label>
-                                    <span class="calc-unit">50,- NOK</span>
-                                </span>
+                            <div class="calc-row">
+                                <label for="calcTip"><span data-i18n="calcTipLabel">Knekte spisser</span> <small>+50 kr</small></label>
                                 <select id="calcTip" class="quantity-select">
-                                <option value="0" selected>0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                                <option value="51">51</option>
-                                <option value="52">52</option>
-                                <option value="53">53</option>
-                                <option value="54">54</option>
-                                <option value="55">55</option>
-                                <option value="56">56</option>
-                                <option value="57">57</option>
-                                <option value="58">58</option>
-                                <option value="59">59</option>
-                                <option value="60">60</option>
-                                <option value="61">61</option>
-                                <option value="62">62</option>
-                                <option value="63">63</option>
-                                <option value="64">64</option>
-                                <option value="65">65</option>
-                                <option value="66">66</option>
-                                <option value="67">67</option>
-                                <option value="68">68</option>
-                                <option value="69">69</option>
-                                <option value="70">70</option>
-                                <option value="71">71</option>
-                                <option value="72">72</option>
-                                <option value="73">73</option>
-                                <option value="74">74</option>
-                                <option value="75">75</option>
-                                <option value="76">76</option>
-                                <option value="77">77</option>
-                                <option value="78">78</option>
-                                <option value="79">79</option>
-                                <option value="80">80</option>
-                                <option value="81">81</option>
-                                <option value="82">82</option>
-                                <option value="83">83</option>
-                                <option value="84">84</option>
-                                <option value="85">85</option>
-                                <option value="86">86</option>
-                                <option value="87">87</option>
-                                <option value="88">88</option>
-                                <option value="89">89</option>
-                                <option value="90">90</option>
-                                <option value="91">91</option>
-                                <option value="92">92</option>
-                                <option value="93">93</option>
-                                <option value="94">94</option>
-                                <option value="95">95</option>
-                                <option value="96">96</option>
-                                <option value="97">97</option>
-                                <option value="98">98</option>
-                                <option value="99">99</option>
-                                <option value="100">100</option>
-                            </select>
+                                    <option value="0">0</option>
+                                </select>
                             </div>
-                            <div class="calc-field">
-                                <span class="calc-field-label">
-                                    <label for="calcBevel" data-i18n="calcBevelLabel">Kniver med ensidig egg</label>
-                                    <span class="calc-unit">100,- NOK</span>
-                                </span>
+                            <div class="calc-row">
+                                <label for="calcBevel"><span data-i18n="calcBevelLabel">Ensidig egg</span> <small>+100 kr</small></label>
                                 <select id="calcBevel" class="quantity-select">
-                                <option value="0" selected>0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                                <option value="51">51</option>
-                                <option value="52">52</option>
-                                <option value="53">53</option>
-                                <option value="54">54</option>
-                                <option value="55">55</option>
-                                <option value="56">56</option>
-                                <option value="57">57</option>
-                                <option value="58">58</option>
-                                <option value="59">59</option>
-                                <option value="60">60</option>
-                                <option value="61">61</option>
-                                <option value="62">62</option>
-                                <option value="63">63</option>
-                                <option value="64">64</option>
-                                <option value="65">65</option>
-                                <option value="66">66</option>
-                                <option value="67">67</option>
-                                <option value="68">68</option>
-                                <option value="69">69</option>
-                                <option value="70">70</option>
-                                <option value="71">71</option>
-                                <option value="72">72</option>
-                                <option value="73">73</option>
-                                <option value="74">74</option>
-                                <option value="75">75</option>
-                                <option value="76">76</option>
-                                <option value="77">77</option>
-                                <option value="78">78</option>
-                                <option value="79">79</option>
-                                <option value="80">80</option>
-                                <option value="81">81</option>
-                                <option value="82">82</option>
-                                <option value="83">83</option>
-                                <option value="84">84</option>
-                                <option value="85">85</option>
-                                <option value="86">86</option>
-                                <option value="87">87</option>
-                                <option value="88">88</option>
-                                <option value="89">89</option>
-                                <option value="90">90</option>
-                                <option value="91">91</option>
-                                <option value="92">92</option>
-                                <option value="93">93</option>
-                                <option value="94">94</option>
-                                <option value="95">95</option>
-                                <option value="96">96</option>
-                                <option value="97">97</option>
-                                <option value="98">98</option>
-                                <option value="99">99</option>
-                                <option value="100">100</option>
-                            </select>
+                                    <option value="0">0</option>
+                                </select>
                             </div>
-                            <div class="calc-field">
-                                <span class="calc-field-label">
-                                    <label for="calcFillet" data-i18n="calcFilletLabel">Fileteringskniver</label>
-                                    <span class="calc-unit">25,- NOK</span>
-                                </span>
+                            <div class="calc-row">
+                                <label for="calcFillet"><span data-i18n="calcFilletLabel">Fileteringskniver</span> <small>+25 kr</small></label>
                                 <select id="calcFillet" class="quantity-select">
-                                <option value="0" selected>0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                                <option value="51">51</option>
-                                <option value="52">52</option>
-                                <option value="53">53</option>
-                                <option value="54">54</option>
-                                <option value="55">55</option>
-                                <option value="56">56</option>
-                                <option value="57">57</option>
-                                <option value="58">58</option>
-                                <option value="59">59</option>
-                                <option value="60">60</option>
-                                <option value="61">61</option>
-                                <option value="62">62</option>
-                                <option value="63">63</option>
-                                <option value="64">64</option>
-                                <option value="65">65</option>
-                                <option value="66">66</option>
-                                <option value="67">67</option>
-                                <option value="68">68</option>
-                                <option value="69">69</option>
-                                <option value="70">70</option>
-                                <option value="71">71</option>
-                                <option value="72">72</option>
-                                <option value="73">73</option>
-                                <option value="74">74</option>
-                                <option value="75">75</option>
-                                <option value="76">76</option>
-                                <option value="77">77</option>
-                                <option value="78">78</option>
-                                <option value="79">79</option>
-                                <option value="80">80</option>
-                                <option value="81">81</option>
-                                <option value="82">82</option>
-                                <option value="83">83</option>
-                                <option value="84">84</option>
-                                <option value="85">85</option>
-                                <option value="86">86</option>
-                                <option value="87">87</option>
-                                <option value="88">88</option>
-                                <option value="89">89</option>
-                                <option value="90">90</option>
-                                <option value="91">91</option>
-                                <option value="92">92</option>
-                                <option value="93">93</option>
-                                <option value="94">94</option>
-                                <option value="95">95</option>
-                                <option value="96">96</option>
-                                <option value="97">97</option>
-                                <option value="98">98</option>
-                                <option value="99">99</option>
-                                <option value="100">100</option>
-                            </select>
+                                    <option value="0">0</option>
+                                </select>
                             </div>
-                        </div>
-
+                        </fieldset>
                         <div class="calc-total">
                             <span data-i18n="calcTotalLabel">Estimert total</span>
-                            <span class="calc-result" id="calcResult" role="status" aria-live="polite" aria-atomic="true">125,- NOK</span>
+                            <output id="calcResult" aria-live="polite" aria-atomic="true">125 kr</output>
                         </div>
-                    </div>
+                        <a class="btn btn-primary quote-link" id="quoteLink" href="mailto:naifuco@gmail.com" data-i18n="quote">Åpne e-post med estimatet</a>
+                        <p class="calc-note" data-i18n="quoteNote">Legg til knivtyper og eventuelle bilder før du sender.</p>
+                    </form>
                 </div>
             </div>
         </section>
@@ -695,36 +166,30 @@
 
         <section id="contact" class="section section-alt">
             <div class="container contact-inner">
-                <h2 class="section-title" data-i18n="contactTitle">Avtal levering og sliping</h2>
-                <p class="section-lead" data-i18n="contactLead">Send antall kniver og knivtype på SMS, e-post eller Facebook. Legg gjerne ved et bilde av skader. Vi avtaler tidspunkt for levering og henting.</p>
-                <div class="contact-methods">
-                    <a class="contact-method" href="sms:48220814">
-                        <span class="contact-method-icon" aria-hidden="true">✉</span>
-                        <span class="contact-method-label" data-i18n="contactSms">Send SMS</span>
-                        <span class="contact-method-value">48 22 08 14</span>
-                    </a>
-                    <a class="contact-method" href="mailto:naifuco@gmail.com?subject=Knivsliping%20%E2%80%93%20foresp%C3%B8rsel&body=Hei%20Phong%2C%0A%0A">
-                        <span class="contact-method-icon" aria-hidden="true">@</span>
-                        <span class="contact-method-label" data-i18n="contactEmail">E-post</span>
-                        <span class="contact-method-value">naifuco@gmail.com</span>
-                    </a>
-                    <a class="contact-method" href="https://www.facebook.com/phongtrl/" target="_blank" rel="noopener">
-                        <span class="contact-method-icon" aria-hidden="true">f</span>
-                        <span class="contact-method-label" data-i18n="contactFacebook">Facebook</span>
-                        <span class="contact-method-value">@phongtrl</span>
-                    </a>
+                <div class="contact-copy">
+                    <h2 class="section-title" data-i18n="contactTitle">Avtal levering og sliping</h2>
+                    <p class="section-lead" data-i18n="contactLead">Send antall kniver og knivtype på SMS, e-post eller Facebook. Legg gjerne ved et bilde av skader. Vi avtaler tidspunkt for levering og henting.</p>
+                    <div class="contact-methods">
+                        <a class="contact-method" href="sms:48220814">
+                            <span class="contact-method-icon" aria-hidden="true">✉</span>
+                            <span class="contact-method-label" data-i18n="contactSms">Send SMS</span>
+                            <span class="contact-method-value">48 22 08 14</span>
+                        </a>
+                        <a class="contact-method" href="mailto:naifuco@gmail.com?subject=Knivsliping%20%E2%80%93%20foresp%C3%B8rsel&body=Hei%20Phong%2C%0A%0A">
+                            <span class="contact-method-icon" aria-hidden="true">@</span>
+                            <span class="contact-method-label" data-i18n="contactEmail">E-post</span>
+                            <span class="contact-method-value">naifuco@gmail.com</span>
+                        </a>
+                        <a class="contact-method" href="https://www.facebook.com/phongtrl/" target="_blank" rel="noopener">
+                            <span class="contact-method-icon" aria-hidden="true">f</span>
+                            <span class="contact-method-label" data-i18n="contactFacebook">Facebook</span>
+                            <span class="contact-method-value">@phongtrl</span>
+                        </a>
+                    </div>
                 </div>
-
                 <div class="contact-map">
                     <h3 class="map-title" data-i18n="mapTitle">Levering og henting</h3>
                     <p class="map-lead" data-i18n="mapLead">Levering og henting i Trondheim etter avtale. Ta kontakt før du kommer.</p>
-                    <div class="map-embed">
-                        <iframe
-                            title="Kniveslipetjenesten – levering og henting i Trondheim"
-                            src="https://www.google.com/maps?q=63.3494402,10.3546145&z=15&output=embed"
-                            width="100%" height="100%" style="border:0" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-                    </div>
                     <a class="map-link" href="https://maps.app.goo.gl/AoRE6VHdJk9wbgVNA" target="_blank" rel="noopener" data-i18n="mapOpen">Åpne i Google Maps</a>
                     <p class="map-note" data-i18n="shippingNote">Jeg opererer hovedsakelig i Trondheim. Bor du utenfor Trondheim og ønsker sliping, ta kontakt så finner vi en løsning — du dekker frakt begge veier, og jeg kan ikke ta ansvar for det som eventuelt skjer med knivene under transport.</p>
                 </div>

@@ -5,13 +5,12 @@ const translations = {
         "pageTitle": "Kniveslipetjenesten | Knife sharpening in Trondheim",
         "navServices": "Services",
         "navPricing": "Pricing",
-        "navNotOffered": "Limitations",
         "navContact": "Contact",
         "navAbout": "How it works",
         "heroEyebrow": "Knife sharpening in Trondheim",
-        "heroTitle": "Blunt kitchen knives? I sharpen them.",
-        "heroSubtitle": "Hand sharpening on Japanese whetstones for home cooks and professional chefs. Standard kitchen knife: NOK 125. Contact me to arrange drop-off and pickup.",
-        "heroCtaPricing": "See Pricing",
+        "heroTitle": "A fresh edge for your kitchen knives.",
+        "heroSubtitle": "Phong sharpens kitchen knives by hand on Japanese whetstones. Drop-off and pickup in Trondheim by appointment.",
+        "heroCtaPricing": "Calculate price",
         "heroCtaContact": "Arrange sharpening",
         "aboutTitle": "How to get your knives sharpened",
         "aboutText1": "Send a text with the number and types of knives you need sharpened. For chips or a broken tip, please include a photo.",
@@ -28,18 +27,14 @@ const translations = {
         "pricingTitle": "Pricing",
         "pricingLead": "NOK 125 per standard kitchen knife. Surcharges below are added to the base price.",
         "price1Label": "Ordinary Kitchen Knife",
-        "price1Note": "Standard sharpening per knife.",
         "price2Label": "Minor Damage Surcharge",
         "price2Note": "Per issue — a chip along the edge or a broken tip counts as 50,- each.",
         "price3Label": "Single-Bevel Surcharge",
-        "price3Note": "For single-bevel knives such as Yanagiba and Deba.",
         "price4Label": "Filleting Knife Surcharge",
-        "price4Note": "For flexible filleting knives.",
-        "exampleTitle": "Example",
-        "exampleText": "A Yanagiba with a small chip on the edge: 125 + 100 + 50 = 275,- NOK.",
+        "exampleText": "A Yanagiba with a small edge chip costs NOK 275 (125 + 100 + 50).",
         "calcTitle": "Price Calculator",
         "calcQtyLabel": "Number of knives",
-        "calcSubsTitle": "Add-ons — select quantity",
+        "calcSubsTitle": "Add-ons",
         "calcChipLabel": "Chips along the edge",
         "calcTipLabel": "Broken tips",
         "calcBevelLabel": "Single-bevel knives",
@@ -62,19 +57,32 @@ const translations = {
         "mapOpen": "Open in Google Maps",
         "shippingNote": "I mainly operate in Trondheim. If you're outside Trondheim and want your knives sharpened, get in touch and we can work something out — you cover shipping both ways, and I can't take responsibility for anything that happens to the knives during transit.",
         "footerText": "Knife sharpening in Trondheim · Phong",
-        "footerTiktok": "Follow my work on TikTok"
+        "footerTiktok": "Follow my work on TikTok",
+        "skip": "Skip to content",
+        "step1": "Send an inquiry",
+        "step2": "Arrange drop-off",
+        "heroRate": "NOK 125",
+        "heroRateUnit": "per standard kitchen knife",
+        "quote": "Open an email with your estimate",
+        "quoteNote": "Add your knife types and any photos before sending.",
+        "zeroNote": "Select at least one knife to prepare an inquiry.",
+        "quoteSubject": "Knife sharpening inquiry",
+        "greeting": "Hi Phong,",
+        "quoteIntro": "I’d like to arrange knife sharpening and drop-off in Trondheim.",
+        "quoteTypes": "Knife types and any notes:",
+        "navigation": "Main navigation",
+        "language": "Choose language"
     },
     "no": {
         "pageTitle": "Kniveslipetjenesten | Knivsliping i Trondheim",
         "navServices": "Tjenester",
         "navPricing": "Priser",
-        "navNotOffered": "Avgrensninger",
         "navContact": "Kontakt",
         "navAbout": "Slik fungerer det",
         "heroEyebrow": "Knivsliping i Trondheim",
-        "heroTitle": "Sløve kjøkkenkniver? Jeg sliper dem.",
-        "heroSubtitle": "Håndsliping på japanske våtsteiner for hjemmekokker og profesjonelle. Vanlig kjøkkenkniv: 125 kr. Avtal levering og henting direkte med meg.",
-        "heroCtaPricing": "Se priser",
+        "heroTitle": "Gi kjøkkenknivene ny egg.",
+        "heroSubtitle": "Phong sliper kjøkkenkniver for hånd på japanske våtsteiner. Levering og henting i Trondheim etter avtale.",
+        "heroCtaPricing": "Beregn pris",
         "heroCtaContact": "Avtal knivsliping",
         "aboutTitle": "Slik får du knivene slipt",
         "aboutText1": "Send en SMS med antall kniver og hvilke typer du vil ha slipt. Har kniven hakk eller knekt spiss, send gjerne et bilde.",
@@ -91,21 +99,17 @@ const translations = {
         "pricingTitle": "Priser",
         "pricingLead": "125 kr per vanlig kjøkkenkniv. Tilleggene nedenfor kommer i tillegg til grunnprisen.",
         "price1Label": "Vanlig kjøkkenkniv",
-        "price1Note": "Standard sliping per kniv.",
         "price2Label": "Tillegg for mindre skader",
         "price2Note": "50 kr per skade. Hakk i eggen og knekt spiss regnes som to skader.",
         "price3Label": "Tillegg for ensidig egg",
-        "price3Note": "For kniver med ensidig egg, som Yanagiba og Deba.",
         "price4Label": "Tillegg for fileteringskniver",
-        "price4Note": "For fleksible fileteringskniver.",
-        "exampleTitle": "Eksempel",
-        "exampleText": "En Yanagiba med et lite hakk i eggen: 125 + 100 + 50 = 275,- NOK.",
+        "exampleText": "En Yanagiba med et lite hakk i eggen koster 275 kr (125 + 100 + 50).",
         "calcTitle": "Priskalkulator",
         "calcQtyLabel": "Antall kniver",
-        "calcSubsTitle": "Tillegg — velg antall",
+        "calcSubsTitle": "Tillegg",
         "calcChipLabel": "Hakk langs eggen",
-        "calcTipLabel": "Knekte tupper",
-        "calcBevelLabel": "Kniver med ensidig egg",
+        "calcTipLabel": "Knekte spisser",
+        "calcBevelLabel": "Ensidig egg",
         "calcFilletLabel": "Fileteringskniver",
         "calcTotalLabel": "Estimert total",
         "notOfferedTitle": "Dette sliper jeg ikke",
@@ -125,86 +129,113 @@ const translations = {
         "mapOpen": "Åpne i Google Maps",
         "shippingNote": "Jeg opererer hovedsakelig i Trondheim. Bor du utenfor Trondheim og ønsker sliping, ta kontakt så finner vi en løsning — du dekker frakt begge veier, og jeg kan ikke ta ansvar for det som eventuelt skjer med knivene under transport.",
         "footerText": "Knivsliping i Trondheim · Phong",
-        "footerTiktok": "Følg arbeidet mitt på TikTok"
+        "footerTiktok": "Følg arbeidet mitt på TikTok",
+        "skip": "Hopp til innhold",
+        "step1": "Send en forespørsel",
+        "step2": "Avtal levering",
+        "heroRate": "125 kr",
+        "heroRateUnit": "per vanlig kjøkkenkniv",
+        "quote": "Åpne e-post med estimatet",
+        "quoteNote": "Legg til knivtyper og eventuelle bilder før du sender.",
+        "zeroNote": "Velg minst én kniv for å lage en forespørsel.",
+        "quoteSubject": "Forespørsel om knivsliping",
+        "greeting": "Hei Phong,",
+        "quoteIntro": "Jeg ønsker å avtale sliping og levering i Trondheim.",
+        "quoteTypes": "Knivtyper og eventuelle merknader:",
+        "navigation": "Hovedmeny",
+        "language": "Velg språk"
     }
 };
 
 let currentLang = "no";
+const calculator = document.getElementById("calculator");
+const result = document.getElementById("calcResult");
+const quoteLink = document.getElementById("quoteLink");
+const quoteNote = calculator.querySelector(".calc-note");
+const contactEmail = document.querySelector('.contact-method[href^="mailto:"]');
+const fields = [
+    { id: "calcQty", label: "calcQtyLabel", rate: 125 },
+    { id: "calcChip", label: "calcChipLabel", rate: 50 },
+    { id: "calcTip", label: "calcTipLabel", rate: 50 },
+    { id: "calcBevel", label: "calcBevelLabel", rate: 100, limitByQuantity: true },
+    { id: "calcFillet", label: "calcFilletLabel", rate: 25, limitByQuantity: true }
+].map((field) => ({ ...field, select: document.getElementById(field.id) }));
+
+function setOptions(select, maximum) {
+    if (select.options.length === maximum + 1 && select.options[0].value === "0") return;
+    const previous = Number(select.value);
+    const options = Array.from({ length: maximum + 1 }, (_, quantity) => new Option(quantity, quantity));
+    select.replaceChildren(...options);
+    select.value = Math.min(previous, maximum);
+}
+
+function emailLink(subject, body) {
+    return `mailto:naifuco@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function updateCalculator() {
+    const dict = translations[currentLang];
+    const quantity = Number(fields[0].select.value);
+    fields.slice(1).forEach(({ select, limitByQuantity }) => {
+        setOptions(select, limitByQuantity || quantity === 0 ? quantity : 100);
+        select.disabled = quantity === 0;
+    });
+
+    const selected = fields.map((field) => ({ ...field, quantity: Number(field.select.value) }));
+    const total = selected.reduce((sum, field) => sum + field.quantity * field.rate, 0);
+    const amount = new Intl.NumberFormat(currentLang === "no" ? "nb-NO" : "en", {
+        maximumFractionDigits: 0
+    }).format(total);
+    const formattedTotal = currentLang === "no" ? `${amount} kr` : `NOK ${amount}`;
+    result.value = formattedTotal;
+    quoteLink.hidden = quantity === 0;
+    quoteNote.textContent = quantity ? dict.quoteNote : dict.zeroNote;
+
+    const lines = selected.filter((field) => field.quantity > 0)
+        .map((field) => `${dict[field.label]}: ${field.quantity}`);
+    const body = [
+        dict.greeting, "", dict.quoteIntro, "", ...lines,
+        `${dict.calcTotalLabel}: ${formattedTotal}`, "", dict.quoteTypes, ""
+    ].join("\r\n");
+    quoteLink.href = emailLink(dict.quoteSubject, body);
+    contactEmail.href = emailLink(dict.quoteSubject, `${dict.greeting}\r\n\r\n`);
+}
 
 function applyLanguage(lang) {
-    const dict = translations[lang];
-    if (!dict) return;
     currentLang = lang;
-
+    const dict = translations[lang];
     document.documentElement.lang = lang === "no" ? "nb" : "en";
-
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
-        const key = el.getAttribute("data-i18n");
-        if (dict[key] === undefined) return;
-        if (key === "pageTitle") {
-            document.title = dict[key];
-        } else {
-            el.textContent = dict[key];
-        }
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+        element.textContent = dict[element.dataset.i18n];
     });
-
-    document.querySelectorAll(".lang-btn").forEach((btn) => {
-        btn.classList.toggle("active", btn.dataset.lang === lang);
+    document.querySelectorAll("[data-label]").forEach((element) => {
+        element.setAttribute("aria-label", dict[element.dataset.label]);
     });
+    document.querySelectorAll(".lang-btn").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+    });
+    updateCalculator();
 
     try {
         localStorage.setItem("kniveslipetjenesten-lang", lang);
-    } catch (e) {
-        /* ignore storage errors */
+    } catch {
+        // The language switch also works when storage is unavailable.
     }
 }
 
-function initLanguage() {
-    let saved = null;
-    try {
-        saved = localStorage.getItem("kniveslipetjenesten-lang");
-    } catch (e) {
-        /* ignore */
-    }
-    applyLanguage(saved === "en" ? "en" : "no");
+let savedLanguage;
+try {
+    savedLanguage = localStorage.getItem("kniveslipetjenesten-lang");
+} catch {
+    // Use Norwegian when the stored preference is inaccessible.
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    initLanguage();
-
-    document.querySelectorAll(".lang-btn").forEach((btn) => {
-        btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
-    });
-
-    const yearEl = document.getElementById("year");
-    if (yearEl) {
-        yearEl.textContent = new Date().getFullYear();
-    }
-
-    const calcQty = document.getElementById("calcQty");
-    const calcChip = document.getElementById("calcChip");
-    const calcTip = document.getElementById("calcTip");
-    const calcBevel = document.getElementById("calcBevel");
-    const calcFillet = document.getElementById("calcFillet");
-    const calcResult = document.getElementById("calcResult");
-    if (calcQty && calcChip && calcTip && calcBevel && calcFillet && calcResult) {
-        const BASE = 125;
-        const DAMAGE = 50;
-        const BEVEL = 100;
-        const FILLET = 25;
-        const count = (el) => Math.max(0, parseInt(el.value, 10) || 0);
-        const updateCalc = () => {
-            const total = count(calcQty) * BASE +
-                count(calcChip) * DAMAGE +
-                count(calcTip) * DAMAGE +
-                count(calcBevel) * BEVEL +
-                count(calcFillet) * FILLET;
-            calcResult.textContent = `${total},- NOK`;
-        };
-        [calcQty, calcChip, calcTip, calcBevel, calcFillet].forEach((el) => {
-            el.addEventListener("input", updateCalc);
-            el.addEventListener("change", updateCalc);
-        });
-        updateCalc();
-    }
+setOptions(fields[0].select, 100);
+applyLanguage(savedLanguage === "en" ? "en" : "no");
+calculator.hidden = false;
+calculator.addEventListener("change", updateCalculator);
+calculator.addEventListener("submit", (event) => event.preventDefault());
+document.querySelectorAll(".lang-btn").forEach((button) => {
+    button.addEventListener("click", () => applyLanguage(button.dataset.lang));
 });
+document.getElementById("year").textContent = new Date().getFullYear();
