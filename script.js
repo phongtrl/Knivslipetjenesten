@@ -80,7 +80,7 @@ const translations = {
         "navContact": "Kontakt",
         "navAbout": "Slik fungerer det",
         "heroEyebrow": "Knivsliping i Trondheim",
-        "heroTitle": "Gi kjøkkenknivene ny egg.",
+        "heroTitle": "Gi knivene ny egg.",
         "heroSubtitle": "Phong sliper kjøkkenkniver for hånd på japanske våtsteiner. Levering og henting i Trondheim etter avtale.",
         "heroCtaPricing": "Beregn pris",
         "heroCtaContact": "Avtal knivsliping",
